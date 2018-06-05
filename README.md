@@ -55,7 +55,7 @@ Package中手动选择刚刚新建的model处路径<br>
 在model文件夹下可以看到自动生成的类<br>
 <br>
 <font color=#0099dd size=5 face="黑体">3.配置后端</font><br>
-在以下路径（src\main\java.com.example.你的项目名）新建文件夹(文件夹指的是Package) Config，放置下载的文件CorsConfig，用于跨域访问（不需要改动)<br>
+在以下路径（src\main\java.com.example.你的项目名）新建文件夹(文件夹指的是Package) Config，放置下载的文件CorsConfig，用于跨域访问，需要改动飘红的文件路径（不需要改动)<br>
 <br>
 接下来以book为例，写一个get方法：<br>
 在以下路径（src\main\java.com.example.你的项目名）新建文件夹(文件夹指的是Package) DAO，在里面新建一个BookRepository类,在代码中改变其为接口，并且extends JpaRepository<Book,Integer>，其中Integer不能改变，是和数据库中表的id相关，这样每次save的时候id都是自动分配的（因此id需要改成int类型）<br>
